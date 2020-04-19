@@ -1,4 +1,4 @@
-package br.com.alessanderleite.app.service;
+package br.com.alessanderleite.app.services;
 
 import java.util.Optional;
 
