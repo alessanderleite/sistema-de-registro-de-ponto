@@ -1,4 +1,4 @@
-package br.com.alessanderleite.app.security;
+package br.com.alessanderleite.app.security.services;
 
 import java.util.Optional;
 
@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import br.com.alessanderleite.app.entities.Funcionario;
+import br.com.alessanderleite.app.security.JwtUserFactory;
 import br.com.alessanderleite.app.services.FuncionarioService;
 
 @Service
