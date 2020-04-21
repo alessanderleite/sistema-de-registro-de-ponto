@@ -1,4 +1,4 @@
-package br.com.alessanderleite.app.repository;
+package br.com.alessanderleite.app.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;

@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import br.com.alessanderleite.app.entities.Funcionario;
-import br.com.alessanderleite.app.repository.FuncionarioRepository;
+import br.com.alessanderleite.app.repositories.FuncionarioRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

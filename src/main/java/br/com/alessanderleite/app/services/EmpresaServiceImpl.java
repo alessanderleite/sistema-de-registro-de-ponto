@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.alessanderleite.app.entities.Empresa;
-import br.com.alessanderleite.app.repository.EmpresaRepository;
+import br.com.alessanderleite.app.repositories.EmpresaRepository;
 
 @Service
 public class EmpresaServiceImpl implements EmpresaService {

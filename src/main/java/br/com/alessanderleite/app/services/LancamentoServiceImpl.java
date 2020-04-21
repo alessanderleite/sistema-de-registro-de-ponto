@@ -13,7 +13,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import br.com.alessanderleite.app.entities.Lancamento;
-import br.com.alessanderleite.app.repository.LancamentoRepository;
+import br.com.alessanderleite.app.repositories.LancamentoRepository;
 
 @Service
 public class LancamentoServiceImpl implements LancamentoService{

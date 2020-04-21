@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.alessanderleite.app.entities.Funcionario;
-import br.com.alessanderleite.app.repository.FuncionarioRepository;
+import br.com.alessanderleite.app.repositories.FuncionarioRepository;
 
 @Service
 public class FuncionarioServiceImpl implements FuncionarioService {
