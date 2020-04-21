@@ -8,7 +8,7 @@ import org.hibernate.validator.constraints.br.CNPJ;
 import org.hibernate.validator.constraints.br.CPF;
 
 public class CadastroPJDto {
-	private Long ind;
+	private Long id;
 	
 	@NotEmpty(message = "Nome não pode ser vazio.")
 	@Length(min = 3, max = 200, message = "Nome deve conter entre 3 e 200 caracters")
@@ -36,12 +36,12 @@ public class CadastroPJDto {
 	
 	public CadastroPJDto() {}
 
-	public Long getInd() {
-		return ind;
+	public Long getId() {
+		return id;
 	}
 
-	public void setInd(Long ind) {
-		this.ind = ind;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getNome() {
@@ -94,7 +94,7 @@ public class CadastroPJDto {
 
 	@Override
 	public String toString() {
-		return "CadastroPJDto [ind=" + ind + ", nome=" + nome + ", email=" + email + ", senha=" + senha + ", cpf=" + cpf
+		return "CadastroPJDto [id=" + id + ", nome=" + nome + ", email=" + email + ", senha=" + senha + ", cpf=" + cpf
 				+ ", razaoSocial=" + razaoSocial + ", cnpj=" + cnpj + "]";
 	}
 }
