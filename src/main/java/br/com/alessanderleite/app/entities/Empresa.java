@@ -12,6 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
@@ -21,7 +22,7 @@ public class Empresa implements Serializable {
 	private static final long serialVersionUID = -1530419111640948605L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(name = "razao_social", nullable = false)
@@ -94,6 +95,7 @@ public class Empresa implements Serializable {
 		dataAtualizacao = new Date();
 	}
 	
+	@PrePersist
 	public void prePersist() {
 		final Date atual = new Date();
 		dataCriacao = atual;

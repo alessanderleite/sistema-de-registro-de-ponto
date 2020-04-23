@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.stereotype.Component;
 
 import br.com.alessanderleite.app.entities.Empresa;
 import br.com.alessanderleite.app.entities.Funcionario;
@@ -35,6 +36,7 @@ public class PontoInteligenteApiApplication {
 		SpringApplication.run(PontoInteligenteApiApplication.class, args);
 	}
 	
+	@Component
 	public class CommandLineAppStartupRunner implements CommandLineRunner {
 
 		@Override

@@ -18,6 +18,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -29,7 +30,7 @@ public class Funcionario implements Serializable {
 	private static final long serialVersionUID = 8336233715036032027L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(name = "nome", nullable = false)
@@ -190,6 +191,7 @@ public class Funcionario implements Serializable {
 		this.lancamentos = lancamentos;
 	}
 	
+	@PreUpdate
 	public void PreUpdate() {
 		dataAtualizacao = new Date();
 	}
